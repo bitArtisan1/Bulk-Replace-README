@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 #
-# A simple script to update a single GitHub repository README.md,
-# replacing only BuyMeACoffee badges with Ko‑fi badges.
-#
 
 # User-configurable parameters
 REPO_NAME="CapScript"  # Name of the repository to update
