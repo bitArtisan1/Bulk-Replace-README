@@ -1,18 +1,8 @@
-# 🔠 Bulk Replace GitHub README Badges
+# 💠 Bulk Replace GitHub README Badges
 
 This script automates updating `README.md` files across all **public GitHub repositories** for a specified user. It replaces **BuyMeACoffee** badges with **Ko‑fi** badges (in my case, you can specify whatever you want to replace) using either the GitHub CLI (`gh`) or GitHub REST API as fallback.
 
 Supports both **Windows** (PowerShell) and **Linux/macOS** (PowerShell or Bash).
-
----
-
-## ✨ Features
-
-- Replaces specific badge HTML blocks using multi-line regex.
-- Works across multiple repos in one go.
-- Uses `gh` CLI for convenience, or REST API + `git` fallback.
-- Automatically configures Git user identity (if needed).
-- Fully cross-platform (PowerShell Core or Bash).
 
 ---
 
