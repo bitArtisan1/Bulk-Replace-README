@@ -83,28 +83,28 @@ pwsh -ExecutionPolicy Bypass -File .\update_readmes.ps1 `
 
 ##### Debian/Ubuntu example:
 ```
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
-sudo apt update
-sudo apt install -y powershell
+$ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+$ sudo dpkg -i packages-microsoft-prod.deb
+$ sudo apt update
+$ sudo apt install -y powershell
 ```
 📦 **Install Git** (if not installed):
 
 sudo apt install git
 
 💡 **Optional: Install GitHub CLI (`gh`)**
+```
+$ type -p curl >/dev/null || sudo apt install curl -y
+$ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg |
+$ sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+$ sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
 
-type -p curl >/dev/null || sudo apt install curl -y
-curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg |
-  sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
-sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+$ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" |
+$ sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" |
-  sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
-
-sudo apt update
-sudo apt install gh
-
+$ sudo apt update
+$ sudo apt install gh
+```
 🔑 **If not using `gh`, get a GitHub Token**
 
 1. Visit: https://github.com/settings/tokens
