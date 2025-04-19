@@ -81,7 +81,6 @@ pwsh -ExecutionPolicy Bypass -File .\update_readmes.ps1 `
 
 🔧 **Install PowerShell 7+**:
 
-##### Debian/Ubuntu example:
 ```
 $ wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
 $ sudo dpkg -i packages-microsoft-prod.deb
@@ -140,3 +139,15 @@ sudo apt install git curl jq perl
 chmod +x update_readmes.sh
 ./update_readmes.sh bitArtisan1 https://ko-fi.com/D1D11CZNM1 100 "Your Name" "you@example.com"
 ```
+## 🔄 What It Does
+
+For each repo:
+
+- Clones it locally
+- Checks for a `README.md` file
+- Replaces:
+  - Any `<div align="right">...</div>` with a centered Ko‑fi badge
+  - Any existing BuyMeACoffee badge/link with a Ko‑fi alternative
+- Commits the change
+- Pushes to the `main` branch
+- Deletes the local clone
