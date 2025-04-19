@@ -57,5 +57,5 @@ Follow the prompt to authorize via browser.
 
 5. **Run the Script**
 ```
-pwsh -ExecutionPolicy Bypass -File .\update_readmes.ps1 ` -User "bitArtisan1" -KoFiUrl "https://ko-fi.com/D1D11CZNM1" -RepoLimit 100 -GitName "Your Name" -GitEmail "you@example.com"
+pwsh -ExecutionPolicy Bypass -File .\update_readmes.ps1 ` -User "bitArtisan1" ` -KoFiUrl "https://ko-fi.com/D1D11CZNM1" ` -RepoLimit 100 ` -GitName "Your Name" ` -GitEmail "you@example.com"
 ```
