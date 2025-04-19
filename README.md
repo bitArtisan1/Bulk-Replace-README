@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://ko-fi.com/D1D11CZNM1">
+    <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi" />
+  </a>
+</p>
+
 # 💠 Bulk Replace GitHub README Badges
 
 This simple script automates updating `README.md` files across all **public GitHub repositories** for a specified user. It replaces **BuyMeACoffee** badges with **Ko‑fi** badges (in my case, you can specify whatever you want to replace) using either the GitHub CLI (`gh`) or GitHub REST API as fallback.
@@ -145,3 +151,26 @@ sudo apt install git curl jq perl
 chmod +x update_readmes.sh
 ./update_readmes.sh bitArtisan1 https://ko-fi.com/D1D11CZNM1 100 "Your Name" "you@example.com"
 ```
+
+## Support Me
+If you find this tool useful, consider supporting me by:
+
+- Starring the repository on GitHub
+- Sharing the tool with others
+- Providing feedback and suggestions
+- Follow me for more :)
+
+<a href="https://ko-fi.com/D1D11CZNM1">
+  <img src="https://github.com/user-attachments/assets/ba118768-9054-416f-b7b2-adaa69a53434" alt="Support me on Ko-fi" width="200" />
+</a>
+<center>
+    
+---
+For any issues or feature requests, please open an issue on GitHub. Happy coding!
+
+<div style="text-align: center;">
+  <p align="center">
+    <img src="https://github.com/user-attachments/assets/36a3e590-bad2-463d-a25e-f56d65c26761" alt="octodance" width="100" height="100" style="margin-right: 10px;"/>
+  </p>
+</div>
+</center>
