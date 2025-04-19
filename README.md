@@ -129,7 +129,9 @@ pwsh ./update_readmes.ps1 \
 
 1. Make sure the following are installed:
 
-```sudo apt install git curl jq perl```
+```
+sudo apt install git curl jq perl
+```
 
 2. Use the `update_readmes.sh` script (Bash-compatible version).
 
