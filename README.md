@@ -82,11 +82,12 @@ pwsh -ExecutionPolicy Bypass -File .\update_readmes.ps1 `
 🔧 **Install PowerShell 7+**:
 
 ##### Debian/Ubuntu example:
+```
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 sudo apt update
 sudo apt install -y powershell
-
+```
 📦 **Install Git** (if not installed):
 
 sudo apt install git
