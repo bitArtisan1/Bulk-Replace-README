@@ -117,8 +117,9 @@ $ sudo apt install gh
    - ✅ `repo`
 4. Click **Generate token**
 5. Copy the token and export it in your shell:
-
+```
 export GITHUB_TOKEN="<your_personal_access_token>"
+```
 
 🚀 **Run the Script:**
 ```
