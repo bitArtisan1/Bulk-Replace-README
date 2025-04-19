@@ -117,10 +117,24 @@ $ sudo apt install gh
 export GITHUB_TOKEN="<your_personal_access_token>"
 
 🚀 **Run the Script:**
-
+```
 pwsh ./update_readmes.ps1 \
   -User "bitArtisan1" \
   -KoFiUrl "https://ko-fi.com/D1D11CZNM1" \
   -RepoLimit 100 \
   -GitName "Your Name" \
   -GitEmail "you@example.com"
+```
+#### Option 2: Bash Script
+
+1. Make sure the following are installed:
+
+```sudo apt install git curl jq perl```
+
+2. Use the `update_readmes.sh` script (Bash-compatible version).
+
+3. Run it:
+```
+chmod +x update_readmes.sh
+./update_readmes.sh bitArtisan1 https://ko-fi.com/D1D11CZNM1 100 "Your Name" "you@example.com"
+```
