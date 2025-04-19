@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<span style="font-size:32px;">THIS TOOL WAS DESIGNED FOR MY CASE ONYL, IF YOU WANT TO USE IT, YOU WOULD NEED TO MODIFY PARTS OF THE CODE.</span>
+<span style="font-size:72px;">THIS TOOL WAS DESIGNED FOR MY CASE ONYL, IF YOU WANT TO USE IT, YOU WOULD NEED TO MODIFY PARTS OF THE CODE.</span>
 # 💠 Bulk Replace GitHub README Badges
 
 This simple script automates updating `README.md` files across all **public GitHub repositories** for a specified user. It replaces **BuyMeACoffee** badges with **Ko‑fi** badges (in my case, you can specify whatever you want to replace) using either the GitHub CLI (`gh`) or GitHub REST API as fallback.
