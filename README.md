@@ -1,6 +1,6 @@
 # 🔠 Bulk Replace GitHub README Badges
 
-This script automates updating `README.md` files across all **public GitHub repositories** for a specified user. It replaces **BuyMeACoffee** badges with **Ko‑fi** badges using either the GitHub CLI (`gh`) or GitHub REST API as fallback.
+This script automates updating `README.md` files across all **public GitHub repositories** for a specified user. It replaces **BuyMeACoffee** badges with **Ko‑fi** badges (in my case, you can specify whatever you want to replace) using either the GitHub CLI (`gh`) or GitHub REST API as fallback.
 
 Supports both **Windows** (PowerShell) and **Linux/macOS** (PowerShell or Bash).
 
@@ -13,6 +13,21 @@ Supports both **Windows** (PowerShell) and **Linux/macOS** (PowerShell or Bash).
 - Uses `gh` CLI for convenience, or REST API + `git` fallback.
 - Automatically configures Git user identity (if needed).
 - Fully cross-platform (PowerShell Core or Bash).
+
+---
+
+## 🔄 What It Does
+
+For each repo:
+
+- Clones it locally
+- Checks for a `README.md` file
+- Replaces:
+  - Any `<div align="right">...</div>` with a centered Ko‑fi badge
+  - Any existing BuyMeACoffee badge/link with a Ko‑fi alternative
+- Commits the change
+- Pushes to the `main` branch
+- Deletes the local clone
 
 ---
 
@@ -139,15 +154,3 @@ sudo apt install git curl jq perl
 chmod +x update_readmes.sh
 ./update_readmes.sh bitArtisan1 https://ko-fi.com/D1D11CZNM1 100 "Your Name" "you@example.com"
 ```
-## 🔄 What It Does
-
-For each repo:
-
-- Clones it locally
-- Checks for a `README.md` file
-- Replaces:
-  - Any `<div align="right">...</div>` with a centered Ko‑fi badge
-  - Any existing BuyMeACoffee badge/link with a Ko‑fi alternative
-- Commits the change
-- Pushes to the `main` branch
-- Deletes the local clone
