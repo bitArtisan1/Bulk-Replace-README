@@ -5,6 +5,7 @@
 </p>
 
 <h1 style="font-size:48px;">GIANT TEXT</h1>
+
 # 💠 Bulk Replace GitHub README Badges
 
 This simple script automates updating `README.md` files across all **public GitHub repositories** for a specified user. It replaces **BuyMeACoffee** badges with **Ko‑fi** badges (in my case, you can specify whatever you want to replace) using either the GitHub CLI (`gh`) or GitHub REST API as fallback.
