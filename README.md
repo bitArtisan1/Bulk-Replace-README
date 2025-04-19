@@ -16,7 +16,7 @@ Supports both **Windows** (PowerShell) and **Linux/macOS** (PowerShell or Bash).
 
 ---
 
-## 🪟 Windows Guide
+## ⊞ Windows Guide
 
 ### ✅ Requirements
 
