@@ -64,4 +64,62 @@ pwsh -ExecutionPolicy Bypass -File .\update_readmes.ps1 `
   -GitName "Your Name" `
   -GitEmail "you@example.com"
 ```
+---
 
+## 🐧 Linux / macOS Guide
+
+### ✅ Requirements
+
+- PowerShell 7+ (`pwsh`) **or** Bash
+- `git`
+- Optional: `gh` CLI
+- If using Bash version: `jq`, `curl`, `perl`
+
+### 🛠️ Installation
+
+#### Option 1: PowerShell Core
+
+🔧 **Install PowerShell 7+**:
+
+# Debian/Ubuntu example:
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt update
+sudo apt install -y powershell
+
+📦 **Install Git** (if not installed):
+
+sudo apt install git
+
+💡 **Optional: Install GitHub CLI (`gh`)**
+
+type -p curl >/dev/null || sudo apt install curl -y
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg |
+  sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" |
+  sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+
+sudo apt update
+sudo apt install gh
+
+🔑 **If not using `gh`, get a GitHub Token**
+
+1. Visit: https://github.com/settings/tokens
+2. Click **"Generate new token (classic)"**
+3. Set scopes:
+   - ✅ `repo`
+4. Click **Generate token**
+5. Copy the token and export it in your shell:
+
+export GITHUB_TOKEN="<your_personal_access_token>"
+
+🚀 **Run the Script:**
+
+pwsh ./update_readmes.ps1 \
+  -User "bitArtisan1" \
+  -KoFiUrl "https://ko-fi.com/D1D11CZNM1" \
+  -RepoLimit 100 \
+  -GitName "Your Name" \
+  -GitEmail "you@example.com"
